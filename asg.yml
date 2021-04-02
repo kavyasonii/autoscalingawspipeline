@@ -29,6 +29,7 @@ Parameters:
     ConstraintDescription: must be a valid IP CIDR range of the form x.x.x.x/x.
   LatestAmiId:
     Type:  'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
+    Default: '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
   EnvironmentName:
     Description: An environment name that is prefixed to resource names
     Type: String
@@ -49,7 +50,7 @@ Parameters:
     Default: 10.192.11.0/24
 
   PrivateSubnet1CIDR:
-    Description: Please enter the IP range (CIDR notation) for the private subnet in the first Availability Zone
+    Description: Please enter the IP range (CIDR no tation) for the private subnet in the first Availability Zone
     Type: String
     Default: 10.192.20.0/24
 
